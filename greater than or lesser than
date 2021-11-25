@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+   float a,b,c;
+   printf("the value of a");
+   scanf("%f",&a);
+   printf("the value of b");
+   scanf("%f",&b);
+   printf("the value of c");
+   scanf("%f",&c);
+   if(a>b && a>c)
+   {
+       printf("a is max");
+       
+   }
+else if(b>c)
+{
+    printf("b is max");
+    
+}
+else
+{
+printf("c is max");
+}
+return 0;
+
+}
