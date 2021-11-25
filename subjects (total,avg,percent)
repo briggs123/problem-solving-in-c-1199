@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    float a,b,c,d,e,total,avg,percentage;
+    printf("subject 1 marks");
+    scanf("%F",&a);
+    printf("subject 2 marks");
+    scanf("%f",&b);
+    printf("subject 3 marks");
+    scanf("%f",&c);
+    printf("subject 4  marks");
+    scanf("%f",&d);
+    printf("subject 5 marks");
+    scanf("%f",&e);
+    total=a+b+c+d+e;
+    avg=(a+b+c+d+e)/5;
+    percentage=(total/500)*100;
+    printf("the total marks%f",total);
+    printf("\navg%f",avg);
+    printf("\npercentage%f",percentage);
+
+    return 0;
+}
