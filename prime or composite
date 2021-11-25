@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("check wheather the value is prime or not");
+   printf("\n enter the value of a");
+   scanf("%d",&a);
+   if(a%2==1)
+   {
+       printf("the value is prime");
+       
+   }
+else
+{
+    printf("the value is composite ie not a prime");
+}
+    return 0;
+}
