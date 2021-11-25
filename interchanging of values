@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=20;
+    int b= 30;
+   int c=20;
+    a=b;
+    b=c;
+    c=a;
+    printf("the value of a%d",a);
+    printf("\nthe value of b%d",b);
+    printf("\nthe value of c%d",c);
+    return 0;
+    
+    
+    
+    
+}
