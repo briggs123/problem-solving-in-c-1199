@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int b;
+    float duration;
+    printf("enter the distance");
+    scanf("%d",&a);
+    printf("the value of speed");
+    scanf("%d",&b);
+    duration=a/b;
+    printf("the value of duration is%f",duration);
+
+    return 0;
+}
+
