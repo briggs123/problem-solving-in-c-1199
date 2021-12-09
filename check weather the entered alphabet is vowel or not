@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main ()
+{
+    char alph;
+    printf("enter the alpahbet you want to check");
+    scanf("%c",&alph);
+    if(alph>32&&alph<90)
+    {
+        alph=alph+32;
+    }
+        if(alph=='a'||alph=='e'|| alph=='i'|| alph=='o'|| alph=='u')
+        {
+            printf("%c is vowel",alph);
+        }
+        else
+        {
+            printf(" %c is consonent",alph);
+        }
+        
+    
+    return 0;
+}
