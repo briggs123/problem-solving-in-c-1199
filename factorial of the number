@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+  int  num,fact=1,a=1;
+    printf("enter the number you want to find factriol for");
+    scanf("%d",&num);
+    for(a=1;a<=num;a++)
+    {
+        fact=fact*a;
+
+    }
+            printf("the factorial of the number is :%d",fact);
+    return 0;
+}
