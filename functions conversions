@@ -1,0 +1,18 @@
+#include<stdio.h>
+char letter(char a)
+{
+    int convert;
+    convert=a+32;
+    return convert;
+}
+int main()
+{
+    char a,conversion;
+    printf("enter the charachter");
+    scanf("%c",&a);
+    conversion=letter(a);
+    printf("conversion %c",conversion);
+    return 0;
+}
+
+
