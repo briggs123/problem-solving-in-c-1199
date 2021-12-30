@@ -1,0 +1,37 @@
+#include<stdio.h>
+int even(int);
+int odd(int);
+int even(int a)
+{
+    int i;
+    printf("even numbeers \n :");
+    for(i=1;i<=a;i++)
+    {
+        if(i%2==0)
+        {
+            printf("%d ",i);
+        }
+    }
+}
+int odd(int b)
+{
+    printf("\nodd numbers\n");
+    int j,c;
+    
+    for(j=1;j<=b;j++)
+    {
+        c=2*j+1;
+        if(c<=b){
+        printf("%d ",c);
+        }
+    }
+}
+
+int main()
+{
+    int n;
+    printf("enter the maximum number");
+    scanf("%d",&n);
+     even(n);
+   odd(n);
+ }
