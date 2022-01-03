@@ -2,8 +2,8 @@
 #include<math.h>
 int power(int a,int b)
 {
-    int  t,value;
-    value= pow(a,t);
+    int value;
+    value= pow(a,b);
     return value;
 }
 int main()
