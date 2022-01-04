@@ -1,0 +1,25 @@
+#include<stdio.h>
+int check(int a,int b,int c)
+{
+    if(a>b && a>c)
+    {
+        printf("the %d is maximum",a);
+    }
+    else if(b>c && b>a)
+    {
+        printf("%d is max",b);
+    }
+    else
+    {
+        printf("%d is max",c);
+    }
+    
+}
+int main()
+{
+    int i,j,k;
+    printf("enter the two numbers you want to verify of");
+    scanf("%d%d%d",&i,&j,&k);
+    check(i,j,k);
+    return 0;
+}
