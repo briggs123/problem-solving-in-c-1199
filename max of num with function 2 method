@@ -1,0 +1,26 @@
+#include<stdio.h>
+int verify(int a,int b,int c)
+{
+if(a>b && a>c)
+{
+    return a;
+}
+else if(b>c && b>a)
+{
+    return b;
+}
+else
+{
+    return c;
+}
+}
+int main()
+{
+    int i,j,k,maximum;
+    printf("the value of two numbers ");
+    scanf("%d%d%d",&i,&j,&k);
+    maximum= verify(i,j,k);
+    printf("%d is maximum",maximum);
+    return 0;
+    
+}
