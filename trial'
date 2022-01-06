@@ -1,0 +1,68 @@
+#include<stdio.h>
+#include<math.h>
+int prime(int a)
+{
+    int i,c;
+    for(i=1;i<=a;i++)
+    {
+        if(a%i==0)
+        {
+           c++;
+        }
+    }
+    printf("prime is over");
+    return c;
+}
+int perfect(int b)
+{
+    int rem,sum=0;
+    while(b>0)
+    {
+        rem=b%10;
+        sum=sum+rem;
+        b=b%10;
+    }
+    printf("")
+    return b;
+}
+int armstrong(int c)
+{
+    int rem,power,sum=0;
+    while(c>0)
+    {
+        rem=c%10;
+        power=pow(c,6);
+        sum=sum+power;
+    }
+    return sum;
+}
+int main()
+{
+    int i,check1,check2,check3;
+    printf("enter the number");
+    scanf("%d",&i);
+    check1= prime(i);
+    check2= perfect(i);
+    check3= armstrong(i);
+    if(check1==2 && check2==i && check3==i)
+    {
+        printf("the numbersd are arms strong,prime and perfect");
+    }
+    else if(check1==2)
+    {
+        printf("prime");
+    }
+    else if(check2==i)
+    {
+        printf("it is perfect");
+    }
+    else if(check3==i)
+    {
+        printf("armstrong");
+    }
+    else
+    {
+        printf("it is not satsisfied");
+    }
+    return 0;
+}
