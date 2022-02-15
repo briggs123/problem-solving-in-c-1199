@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct deekshit
+{
+    int i;
+    float j;
+    char str[20];
+}d;
+int main()
+{
+    printf("enter the values");
+    scanf("%d%f%s",&d.i,&d.j,d.str);
+    printf("\n%d\n%f\n%s",d.i,d.j,d.str);
+    return 0;
+}
