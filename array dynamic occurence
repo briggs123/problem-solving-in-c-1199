@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+int array[4][4];
+int i,j,k,c=0;
+printf("enter the number you want to find occurence for");
+scanf("%d",&k);
+for(i=0;i<=3;i++)
+{
+    for(j=0;j<=i;j++)
+    {
+        printf("row=%d   coloumn=%d",i,j);
+        scanf("%d",&array[i][j]);
+    }
+    printf("\n");
+}
+    for(i=0;i<=3;i++)
+    {
+        for(j=0;j<=i;j++)
+        {
+            printf("%d",array[i][j]);
+            if(array[i][j]==k)
+            {
+                c++;
+            }
+        }
+        printf("\n");
+    }
+    printf("occurence of the number %d=%d",k,c);
+    return 0;
+}
+   
+
