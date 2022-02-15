@@ -1,0 +1,27 @@
+#include<stdio.h>
+int factorial(int a)
+{
+    int facts=1,i;
+    for (i=1;i<=a;i++)
+    {
+    facts=facts*i;
+    }
+    return facts;
+}
+int main()
+{
+    int i,temp,rem,fact,sum=0;
+    printf("enter the number ");
+    scanf("%d",&i);
+    temp=i;
+    while(temp>0)
+    {
+        rem=temp%10;
+        fact=factorial(rem);
+        sum=sum+fact;
+        temp=temp/10;
+    }
+   printf("%d",sum);
+    return 0;
+}
+
