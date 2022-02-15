@@ -1,0 +1,24 @@
+#include<stdio.h>
+int facto(int a)
+{
+    if(a==0)
+    {
+        return 1;
+    }
+else    if(a==1)
+    {
+        return 1;
+    }
+    else
+    {
+        return a*facto(a-1);
+    }
+}
+int main()
+{
+    int k;
+    printf("enter the number you want to find factorial for");
+    scanf("%d",&k);
+    printf("%d",facto(k));
+    return 0;
+}
