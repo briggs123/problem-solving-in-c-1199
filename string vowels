@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+int i,n,alphabet;
+char k[100];
+printf("enter the name you want to display on");
+gets(k);
+n=strlen(k);
+for(i=0;i<n;i++)
+{
+   if(k[i]=='a'||k[i]=='e'||k[i]=='i'||k[i]=='o'||k[i]=='u')
+   {
+       printf("\n%c is vowel",k[i]);
+   }
+   else
+   {
+       printf("\n %c is consonents",k[i]);
+   }
+}
+return 0;
+}
